@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="test.NewCustomerTest">
+        <methods>
+          <include name="userShouldBeAbleToAddNewCustomer"/>
+        </methods>
+      </class> <!-- test.NewCustomerTest -->
+      <class name="test.ListCustomerTest">
+        <methods>
+          <include name="userShouldBeAbleToEditCustomer"/>
+        </methods>
+      </class> <!-- test.ListCustomerTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
